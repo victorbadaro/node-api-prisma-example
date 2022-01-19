@@ -1,0 +1,8 @@
+{
+  "name": "node-api-prisma-example",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/victorbadaro/node-api-prisma-example.git",
+  "author": "Victor <victor.badaro@fatec.sp.gov.br>",
+  "license": "MIT"
+}
