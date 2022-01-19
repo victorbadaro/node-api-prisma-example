@@ -6,7 +6,7 @@
   "author": "Victor <victor.badaro@fatec.sp.gov.br>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node-dev --transpile-only src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^17.0.10",
