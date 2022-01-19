@@ -1,8 +1,17 @@
 {
   "name": "node-api-prisma-example",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "repository": "https://github.com/victorbadaro/node-api-prisma-example.git",
   "author": "Victor <victor.badaro@fatec.sp.gov.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.10",
+    "prisma": "^3.8.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
 }
