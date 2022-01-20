@@ -3,14 +3,31 @@ import { prismaClient } from '../database/prismaClient';
 
 class ProductController {
     async index(request: Request, response: Response) {
-        const products = await prismaClient.product.findMany();
+        const products = await prismaClient.product.findMany({
+            select: {
+                id: true,
+                description: true,
+                created_at: true,
+                updated_at: true,
+                user: true
+            }
+        });
 
         return response.json(products);
     }
 
     async find(request: Request, response: Response) {
         const { id } = request.params;
-        const product = await prismaClient.product.findFirst({ where: { id: Number(id) } });
+        const product = await prismaClient.product.findFirst({
+            select: {
+                id: true,
+                description: true,
+                created_at: true,
+                updated_at: true,
+                user: true
+            },
+            where: { id: Number(id) }
+        });
 
         if(!product)
             return response.status(400).json({ error: 'Product not found!' });
