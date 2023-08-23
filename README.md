@@ -9,7 +9,7 @@
 - [👌 Requests](#-requests)
 
 ## 🧾 About
-This project was made to be a simple example of a back-end application using the Sequelize ORM
+This project was made to be a simple example of a back-end application using the Prisma ORM
 
 ## 🚀 Main technologies
 - [Node.js](https://nodejs.org/)
@@ -44,7 +44,7 @@ First things first:
    For example:<br />
    ![image](https://github.com/victorbadaro/node-api-prisma-example/assets/9096344/4f17cb5d-2929-49b2-895e-a1a23235028f)
 
-5. Create the database by running (your postgreSQL server must be running):
+5. Run all the migrations to create the database relations:
    ```bash
    $ yarn prisma migrate dev
    ```
