@@ -40,7 +40,7 @@ First things first:
    # feel free to use another package manager, but you might want use yarn once there's already a yarn.lock file in the root directory
    ```
 
-4. Create a `.env` file in the root directory with the same content that is in the [.env.example](./.env.example) file and fill the variables with your own data:<br />
+4. Create a `.env` file in the root directory with the same content that is in the [.env.example](./.env.example) file and fill the variables with your own data (the `DATABASE_URL` variable should be in a [specific format](https://www.prisma.io/docs/concepts/database-connectors/postgresql#connection-details)):<br />
    For example:<br />
    ![image](https://github.com/victorbadaro/node-api-prisma-example/assets/9096344/4f17cb5d-2929-49b2-895e-a1a23235028f)
 

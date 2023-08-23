@@ -39,7 +39,7 @@ Como você pode ver no tópico [🚀 Principais tecnologias](#-principais-tecnol
    # sinta-se livre para usar outro gerenciador de pacotes, mas talvez você queira usar o yarn uma vez que já existe um arquivo yarn.lock na raíz do projeto
    ```
 
-4. Crie um arquivo `.env` na raíz do projeto com o mesmo conteúdo que está no arquivo [.env.example](./.env.example) e preencha as variáveis com os seus dados:<br />
+4. Crie um arquivo `.env` na raíz do projeto com o mesmo conteúdo que está no arquivo [.env.example](./.env.example) e preencha as variáveis com os seus dados (a variável `DATABASE_URL` deve estar em um [formato específico](https://www.prisma.io/docs/concepts/database-connectors/postgresql#connection-details)):<br />
    Por exemplo:<br />
    ![image](https://github.com/victorbadaro/node-api-prisma-example/assets/9096344/4f17cb5d-2929-49b2-895e-a1a23235028f)
 
